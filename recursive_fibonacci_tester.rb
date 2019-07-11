@@ -8,4 +8,6 @@ def fib(num)
   @int_cache[num] = fib(num - 1) + fib(num - 2)
 end
 
-(0..10000).each { |num| puts(fib(num)) }
+finalNum = gets.chomp.to_i
+
+(0..finalNum).each { |num| puts(fib(num)) }
